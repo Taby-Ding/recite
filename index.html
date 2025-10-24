@@ -573,13 +573,19 @@
             <h1>背诵单词抗遗忘系统</h1>
             <h2>导入单词表</h2>
             <div class="upload-section">
-                <p>请上传Excel文件，A列为英文单词，B列为中文释义，C列为年级，D列为单元</p>
+                <p>可自行上传Excel文件</p>
+                <p>要求第一行为标题行</p>
+  		<p>A列为英文单词（必选）</p>
+		<p>B列为中文释义（必选）</p>
+		<p>C列为年级（可选）</p>
+		<p>D列为单元（可选）</p>
+
                 <div class="file-input-wrapper">
                     <button class="file-input-btn">选择Excel文件</button>
                     <input type="file" id="fileInput" class="file-input" accept=".xlsx, .xls">
                 </div>
-                <div class="file-name" id="fileName">未选择文件</div>
-                <p class="hint">支持.xlsx和.xls格式，第一行为标题行</p>
+                <div class="file-name" id="fileName">默认为人教版1-6年级单词</div>
+                <p class="hint">支持.xlsx和.xls格式，点击开始学习直接使用默认单词表</p>
             </div>
             <button class="close-btn" id="startBtn">开始学习</button>
         </div>
